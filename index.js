@@ -125,3 +125,13 @@ for(i=1; i < (totalMonths); i++){
     maxLossMonth = finances[i][0];
 }
 }
+
+// Console logs
+
+console.log('Financial Analysis' + 
+'\n----------------' + 
+'\nTotal Months: ' + totalMonths +
+'\nTotal: $' + sum +
+'\nAverage Change:' + average.toFixed(2) +
+'\nGreatest Increase in Profits/Losses: '  + maxProfitMonth + ' ($' + maxProfit + ')' +
+'\nGreatest Decrease in Profits/Losses: ' + maxLossMonth +  ' ($' + maxLoss + ')');
