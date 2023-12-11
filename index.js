@@ -104,5 +104,3 @@ for (i = 0; i < totalMonths; i++) {
 // Average profit
 
 let average = totalChange / (totalMonths - 1);
-
-
