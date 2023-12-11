@@ -91,3 +91,13 @@ var finances = [
 
 let totalMonths = finances.length;
 
+// Total sum
+
+let sum = 0;
+
+for (i = 0; i < totalMonths; i++) {
+
+  sum = finances[i][1] + sum;
+
+}
+
