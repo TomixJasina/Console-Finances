@@ -101,10 +101,6 @@ for (i = 0; i < totalMonths; i++) {
 
 }
 
-// Average profit
-
-let average = totalChange / (totalMonths - 1);
-
 //Biggest profit + biggest loss
 
 let totalChange= 0;
@@ -125,6 +121,10 @@ for(i=1; i < (totalMonths); i++){
     maxLossMonth = finances[i][0];
 }
 }
+
+// Average profit
+
+let average = totalChange / (totalMonths - 1);
 
 // Console logs
 
