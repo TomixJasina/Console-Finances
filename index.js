@@ -87,3 +87,7 @@ var finances = [
   ['Feb-2017', 671099],
 ];
 
+// Total months
+
+let totalMonths = finances.length;
+
