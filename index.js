@@ -104,3 +104,24 @@ for (i = 0; i < totalMonths; i++) {
 // Average profit
 
 let average = totalChange / (totalMonths - 1);
+
+//Biggest profit + biggest loss
+
+let totalChange= 0;
+let maxLoss = 0;
+let maxProfit = 0;
+
+for(i=1; i < (totalMonths); i++){
+
+  let change = (finances[i][1] - finances[i-1][1]);
+  totalChange += change;
+
+  if (change > 0 && change > maxProfit) {
+    maxProfit = change;
+    maxProfitMonth = finances[i][0];
+
+  } else if (change < 0 && change < maxLoss) {
+    maxLoss = change;
+    maxLossMonth = finances[i][0];
+}
+}
